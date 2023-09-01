@@ -1,9 +1,12 @@
+"use strict";
+//모듈
 const express = require("express");
 const app = express();
 
-const home = require("./routes/home"); // 라우트폴더 홈폴더의 index.js 를 읽어와줘
+// 라우팅
+const home = require("./app/src/routes/home"); // 라우트폴더 홈폴더의 index.js 를 읽어와줘
 // 앱 세팅
-app.set("views","./views");
+app.set("views","./app/src/views");
 app.set("view engine","ejs")
 
 
